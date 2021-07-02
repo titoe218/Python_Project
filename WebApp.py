@@ -8,7 +8,7 @@ from sklearn.feature_selection import SelectKBest
 import numpy as np
 from PIL import Image
 
-image = Image.open('/home/tm/Documents/Ki1/LapTrinhPhanMemNangCao/Python_Project/dataset-cover.jpg')
+image = Image.open('dataset-cover.jpg')
 st.image(image, use_column_width=True)
 
 st.write("""
@@ -18,7 +18,7 @@ Objective: Create a credit scoring algorithm that predicts the chance of a given
 
 # get the data
 df = pd.read_csv(
-    '/home/tm/Documents/Ki1/LapTrinhPhanMemNangCao/Python_Project/hmeq.csv')
+    'hmeq.csv')
 
 # set a subheader
 st.subheader('Data information: ')
